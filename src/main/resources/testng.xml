@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Grid Automation Suite" parallel="tests" thread-count="2">
+
+
+	<test name="ChromeBrowser">
+	
+		<parameter name="browser" value = "chrome"/>
+
+	<classes>
+
+		<class name ="testCases.FacebookTestNew" />
+			
+	</classes>
+	
+	</test>
+	
+	
+		<test name="IEBrowser">
+	
+		<parameter name="browser" value = "internet explorer"/>
+
+	<classes>
+
+		<class name ="testCases.FacebookTestNew" />
+			
+	</classes>
+	
+	</test>
+	
+	
+	
+	
+	
+	</suite>
